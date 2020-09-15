@@ -8,9 +8,13 @@ import ComParametro from './components/basics/ComParametro.jsx'
 ReactDOM.render(
     <div>
         <Comp />
+        <br></br>
         <ComParametro 
-            titulo="Segundo Componente"
-            subtitulo="Exemplo de Subtítulo" />
+            titulo="Sistema de Notas"
+            aluno="Luís Claúdio"
+            nota={9.3} />
     </div>, 
     document.getElementById('root')
 )
+
+//Números entre conchete!
