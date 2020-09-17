@@ -2,19 +2,9 @@ import './index.css'
 import ReactDOM from'react-dom'
 import React from 'react'
 
-import Comp from './components/basics/First.jsx'
-import ComParametro from './components/basics/ComParametro.jsx'
+import App from './App'
 
 ReactDOM.render(
-    <div>
-        <Comp />
-        <br></br>
-        <ComParametro 
-            titulo="Sistema de Notas"
-            aluno="Luís Claúdio"
-            nota={9.3} />
-    </div>, 
+    <App />, 
     document.getElementById('root')
 )
-
-//Números entre conchete!
