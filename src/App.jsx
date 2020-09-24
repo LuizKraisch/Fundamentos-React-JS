@@ -1,6 +1,8 @@
 import './App.css'
 import React from 'react'
 
+import DiretaPai from './components/comunicacao/DiretaPai'
+import UsuarioInfo from './components/condicional/UsuarioInfo'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import ListaProdutos from './components/repeticao/ListaProdutos'
 import ListaAlunos from './components/repeticao/ListaAlunos'
@@ -17,8 +19,15 @@ export default props =>
         <h1>Fundamentos React (Arrow)</h1>
         <br></br>
         <div className="Cards">
-            <Card titulo="#8 - Par ou Ímpar" color="#28df99">
-                <ParOuImpar numero={20}/>
+            <Card titulo="#9 - Comunicação Direta" color="#679b9b">
+                <DiretaPai />
+            </Card>
+
+            <Card titulo="#8 - Renderização Condicional" color="#28df99">
+                <UsuarioInfo usuario={{ nome: 'Fernando' }} />
+                <UsuarioInfo usuario={{}} />
+                <br></br>
+                <ParOuImpar numero={20} />
             </Card>
 
             <Card titulo="#7 - Desafio: Repetição" color="#ff9a76">
